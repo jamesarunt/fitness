@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MTH-8U-ffL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today-->
+        <scene sceneID="Q40-xO-Mh5">
+            <objects>
+                <viewController id="MTH-8U-ffL" customClass="FitnessViewController" customModule="fitnessTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="top" id="hlR-T2-DQj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVa-Fq-2dB" customClass="ThemeView" customModule="fitnessTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arun app logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-IX-9F9">
+                                        <rect key="frame" x="0.0" y="23" width="414" height="250.5"/>
+                                        <accessibility key="accessibilityConfiguration" label="Today's Points">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="wdb-2k-OV2" appends="YES" id="aAL-mc-cfN"/>
+                                        </connections>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IcM-px-xVd">
+                                        <rect key="frame" x="5" y="330.5" width="404" height="482.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lZ5-G9-HlA">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="90"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRe-nV-scJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="198" height="90"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="14"/>
+                                                        <inset key="imageEdgeInsets" minX="-98" minY="-180" maxX="-331" maxY="32"/>
+                                                        <state key="normal" title="Steps">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1x-Ms-vRa">
+                                                        <rect key="frame" x="206" y="0.0" width="198" height="90"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Sleep">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YDZ-5f-ADR">
+                                                <rect key="frame" x="0.0" y="98" width="404" height="90"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hug-xO-YXU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="198" height="90"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Workouts">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqh-Bj-3K8">
+                                                        <rect key="frame" x="206" y="0.0" width="198" height="90"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Stand Hours">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nZY-zz-FSU">
+                                                <rect key="frame" x="0.0" y="196" width="404" height="90.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0C-in-AAP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="198" height="90.5"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Move">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAA-2A-SSE">
+                                                        <rect key="frame" x="206" y="0.0" width="198" height="90.5"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Mind Sessions">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-I1-eTv">
+                                                <rect key="frame" x="0.0" y="294.5" width="404" height="90"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyP-hU-9bG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="198" height="90"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Calories">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COl-UP-d1F">
+                                                        <rect key="frame" x="206" y="0.0" width="198" height="90"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Exercise">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IIq-Qo-aSs">
+                                                <rect key="frame" x="0.0" y="392.5" width="404" height="90"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUP-We-8oF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="198" height="90"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Water">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UL-jw-eqm">
+                                                        <rect key="frame" x="206" y="0.0" width="198" height="90"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
+                                                        <state key="normal" title="Watch RIng">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHB-Ld-nr3">
+                                        <rect key="frame" x="30" y="66" width="31" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Mon"/>
+                                        <connections>
+                                            <action selector="MonWorkout:" destination="MTH-8U-ffL" eventType="touchUpInside" id="YKG-2L-zHv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IcM-px-xVd" secondAttribute="bottom" constant="5" id="5KS-nP-bTB"/>
+                                    <constraint firstItem="h0e-IX-9F9" firstAttribute="top" secondItem="pVa-Fq-2dB" secondAttribute="top" constant="30" id="63q-Gc-8lN"/>
+                                    <constraint firstItem="IcM-px-xVd" firstAttribute="top" secondItem="h0e-IX-9F9" secondAttribute="bottom" constant="28" id="IIk-Rm-GKq"/>
+                                    <constraint firstItem="h0e-IX-9F9" firstAttribute="leading" secondItem="pVa-Fq-2dB" secondAttribute="leading" id="MMI-Vc-Bcw"/>
+                                    <constraint firstAttribute="trailing" secondItem="h0e-IX-9F9" secondAttribute="trailing" id="Vxm-pR-tiK"/>
+                                    <constraint firstItem="IcM-px-xVd" firstAttribute="centerX" secondItem="pVa-Fq-2dB" secondAttribute="centerX" id="bK5-ME-Gsb"/>
+                                    <constraint firstItem="IcM-px-xVd" firstAttribute="leading" relation="lessThanOrEqual" secondItem="pVa-Fq-2dB" secondAttribute="leading" constant="5" id="gBu-tK-WcJ"/>
+                                    <constraint firstItem="h0e-IX-9F9" firstAttribute="height" secondItem="pVa-Fq-2dB" secondAttribute="height" multiplier="0.333" id="pX2-yl-1fp"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IcM-px-xVd" secondAttribute="trailing" constant="5" id="z2X-hH-xOz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pVa-Fq-2dB" firstAttribute="width" secondItem="hlR-T2-DQj" secondAttribute="width" id="DEZ-ur-Azi"/>
+                            <constraint firstItem="pVa-Fq-2dB" firstAttribute="leading" secondItem="JPu-fb-kvI" secondAttribute="leading" id="auf-O3-szv"/>
+                            <constraint firstItem="pVa-Fq-2dB" firstAttribute="trailing" secondItem="JPu-fb-kvI" secondAttribute="trailing" id="eER-Qu-4s3"/>
+                            <constraint firstItem="pVa-Fq-2dB" firstAttribute="top" secondItem="JPu-fb-kvI" secondAttribute="top" id="fOf-4E-BX2"/>
+                            <constraint firstItem="pVa-Fq-2dB" firstAttribute="bottom" secondItem="JPu-fb-kvI" secondAttribute="bottom" id="llw-1D-uab"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JPu-fb-kvI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Today" id="ApR-jt-1mC">
+                        <barButtonItem key="leftBarButtonItem" image="info" id="su8-Ve-2A4"/>
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="vyt-Uf-U5M"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="calorie" destination="jyP-hU-9bG" id="eUb-x5-2T1"/>
+                        <outlet property="exercise" destination="COl-UP-d1F" id="qac-Dk-t0w"/>
+                        <outlet property="mind" destination="iAA-2A-SSE" id="Ypt-CB-2RF"/>
+                        <outlet property="move" destination="O0C-in-AAP" id="NVQ-YP-52V"/>
+                        <outlet property="ring" destination="2UL-jw-eqm" id="Gc2-nB-4iE"/>
+                        <outlet property="sleep" destination="i1x-Ms-vRa" id="9Qb-R0-svw"/>
+                        <outlet property="stand" destination="Hqh-Bj-3K8" id="z4p-kx-Qau"/>
+                        <outlet property="step" destination="BRe-nV-scJ" id="3WE-8L-yls"/>
+                        <outlet property="water" destination="lUP-We-8oF" id="FFy-bn-EpG"/>
+                        <outlet property="workouts" destination="hug-xO-YXU" id="HEe-Mh-lv0"/>
+                        <outletCollection property="allButtons" destination="COl-UP-d1F" collectionClass="NSMutableArray" id="NUB-c3-TN5"/>
+                        <outletCollection property="allButtons" destination="jyP-hU-9bG" collectionClass="NSMutableArray" id="OoK-wb-nT1"/>
+                        <outletCollection property="allButtons" destination="lUP-We-8oF" collectionClass="NSMutableArray" id="5Za-Bj-AO2"/>
+                        <outletCollection property="allButtons" destination="2UL-jw-eqm" collectionClass="NSMutableArray" id="gcn-Xz-BZc"/>
+                        <outletCollection property="allButtons" destination="iAA-2A-SSE" collectionClass="NSMutableArray" id="8MX-uG-tcb"/>
+                        <outletCollection property="allButtons" destination="O0C-in-AAP" collectionClass="NSMutableArray" id="f8y-Hj-dmo"/>
+                        <outletCollection property="allButtons" destination="Hqh-Bj-3K8" collectionClass="NSMutableArray" id="dOw-j1-VqC"/>
+                        <outletCollection property="allButtons" destination="hug-xO-YXU" collectionClass="NSMutableArray" id="FN0-0k-IpD"/>
+                        <outletCollection property="allButtons" destination="i1x-Ms-vRa" collectionClass="NSMutableArray" id="8jz-eL-FD2"/>
+                        <outletCollection property="allButtons" destination="BRe-nV-scJ" collectionClass="NSMutableArray" id="fiC-lR-5pD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijb-5w-7Wt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="10" id="wdb-2k-OV2">
+                    <connections>
+                        <action selector="handleSecretTaps:" destination="MTH-8U-ffL" id="gYX-tU-C4X"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-191" y="-603"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arun app logo2.png" width="912.47998046875" height="925.91998291015625"/>
+        <image name="info" width="16" height="16"/>
+        <image name="settings" width="16" height="16"/>
+    </resources>
+</document>
